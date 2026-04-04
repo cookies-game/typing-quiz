@@ -31,7 +31,8 @@ startbtn.onclick = function() {
         { kana: "コンビニ", roma: "konnbini" },
         { kana: "東京スカイツリー", roma: "toukyousukaituri-" },
         { kana: "鬼にケツバット", roma: "oniniketubatto" },
-        { kana: "洗濯科学のアリエーヌ", roma: "senntakukagakunoarie-nu" }
+        { kana: "洗濯科学のアリエーヌ", roma: "senntakukagakunoarie-nu" },
+        { kana: "アソパソマソ", roma: "asopasomaso" }
     ];
     let currentword = {};
     let score = 0;
