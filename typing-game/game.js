@@ -55,7 +55,7 @@ startbtn.onclick = function() {
                 spans[currentindex].classList.add("typed");
             }
             currentindex++;
-            score += 100;
+            score += 150;
             displayscore.textContent = "スコア： " + score;
             if (currentindex === currentword.roma.length) {
                 currentindex = 0;
