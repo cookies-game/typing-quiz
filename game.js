@@ -118,7 +118,6 @@ startbtn2.onclick = function() {
         location.reload();
     }
     const wordlist = [
-        // ↓これをクイズにする
         { kana: "太陽の表面温度は？", roma: "rokusenndo" },
         { kana: "地球の公転周期は？", roma: "itinenn" },
         { kana: "太陽に一番近い惑星は？", roma: "suisei" },
@@ -136,7 +135,7 @@ startbtn2.onclick = function() {
         { kana: "キリンの鳴き声は？", roma: "mo-" },
         { kana: "初代ポケモンの舞台は？", roma: "kannto-tihou" },
         { kana: "「魑魅魍魎」この読み方は？", roma: "timimouryou" },
-        { kana: "大好きだった犬がもう居ぬ", roma: "daisukidattainugamouinu" },
+        { kana: "大好きだった犬はもう居ぬ", roma: "daisukidattainuhamouinu" },
         { kana: "鹿を叱る", roma: "sikawosikaru" },
         { kana: "猫が寝込む", roma: "nekoganekomu" },
         { kana: "サイの最期", roma: "sainosaigo" },
