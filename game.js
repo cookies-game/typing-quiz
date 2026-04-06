@@ -1,4 +1,6 @@
 const startbtn = document.querySelector(".startbtn");
+const params = new URLSearchParams(window.location.search);
+const username = params.get("user");
 startbtn.onclick = function() {
     startbtn.style.display = "none";
     startbtn2.style.display = "none";
@@ -71,7 +73,12 @@ startbtn.onclick = function() {
             currentindex++;
             combo++;
             const basescore = 100;
-            const multiplier = 1 + (combo * 0.15);
+            let multiplier;
+            if (username !== "noob") {
+                multiplier = 1 + (combo * 0.15);
+            } else {
+                multiplier = 1 + (combo * 0.5);
+            }
             const thisscore = Math.floor(basescore * multiplier);
             score += thisscore;
             displayscore.textContent = `スコア： ${score}`;
@@ -169,7 +176,12 @@ startbtn2.onclick = function() {
             currentindex++;
             combo++;
             const basescore = 100;
-            const multiplier = 1 + (combo * 0.35);
+            let multiplier;
+            if (username !== "noob") {
+                multiplier = 1 + (combo * 0.35);
+            } else {
+                multiplier = 1 + (combo * 0.6);
+            }
             const thisscore = Math.floor(basescore * multiplier);
             score += thisscore;
             displayscore.textContent = `スコア： ${score}`;
@@ -185,8 +197,6 @@ startbtn2.onclick = function() {
         }
     })
 };
-const params = new URLSearchParams(window.location.search);
-const username = params.get("user");
 const mgmtbtn = document.querySelector(".mgmtbtn");
 const FBbtn = document.querySelector(".FBbtn");
 const expbtn = document.querySelector(".expbtn");
